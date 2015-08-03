@@ -1,0 +1,1382 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.vcities.org/vcities.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.vcities.org/vcities.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AmpSegCinco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmpSegCuatro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmpSegDos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmpSegOcho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmpSegSeis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmpSegSiete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmpSegTres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmpSegUno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmplitudSegmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegContenido"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegPeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegPesoAlto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegPesoBajo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegPesoMedio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegPromedioVehículosPorParte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegPromedioVehículosTotal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelAlta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelBaja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelEstacionamiento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelMedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelMuyAlta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelMuyBaja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelPeatonal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapSegVelocidad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CapacidadPorSegmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ciudad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntAbierto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntApertura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntCerrado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntEnFunciones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntFuncionalidad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntNoAutorizado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntNoOperante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntOperación"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdoEntOperante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstActivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstBarrera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstBloque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstCrucero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstOneWay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstPasivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstPilonesAutomáticos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstPluma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstPuenteLevadizo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstSegmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstSemáforo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemConstructivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabAguasNegras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabAire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabAutobús"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabAutobúsArticulado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabAutobúsDosPisos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabAutocar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabBicicleta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamCargaArtDosRemolques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamCargaArtTren"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamCargaArtUnRemolque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamCargaArticulado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamCargaRígido"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamioneta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamión"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCamiónCarga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCiclomotor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCoche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCocheSegA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCocheSegB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCocheSegC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCocheSegD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCocheSegE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCocheSegF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabCocheTaxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabConPatines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabEnSillaRuedas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabFerrobús"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabFunicular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabFurgoneta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabFurgónDeCarga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabGasContaminante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabLigero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabLluvia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabLíquido"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMetro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMicroCoche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMidibús"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMinibús"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMonorriel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMotoCamino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMotoCarga"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMotoCompetencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMotoMedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMotoTaxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabMotorizado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabNoMotorizado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabNoPedestre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabOtro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabOtrosDerrames"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabPatín"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabPeatón"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabPedestre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabScooter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabSubutilitario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabTaxiUtilitario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabTodoterreno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabTranvía"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabTrenUrbano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabTrolebús"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabUtilitario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabVehículo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemHabitante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueCamellón"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueCondominio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueCoto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueCuchilla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueGlorieta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueManzana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueMódulo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloquePlaza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoBloqueRotonda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoAndador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoAutopista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoAvenida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoCalle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoCambioVía"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoCiclovía"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoEntradaVía"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoPuente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoSalidaVía"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoSendero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElemPasivoSegmentoTunel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EstadoEntidad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogSegCarrilesPorSentido"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogSegSentidoPorCarril"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LógicaSegmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegNE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegNO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegSE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientSegSO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientaciónSegmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SentSegDoble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SentSegMixto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SentSegSencillo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SentidoSegmento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Señalizacion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#entraDesde"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esOperante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaFuncionando"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estáAbierto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estáConectadoA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#puedeContener"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#saleHacia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneAmplitud"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneLogPorCarril"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneLogPorSentido"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneLógicaOperación"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneOrientación"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneSentido"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AmpSegCinco"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmpSegCuatro"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmpSegDos"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmpSegOcho"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmpSegSeis"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmpSegSiete"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmpSegTres"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmpSegUno"/>
+        <Class IRI="#AmplitudSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegContenido"/>
+        <Class IRI="#CapacidadPorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegPeso"/>
+        <Class IRI="#CapacidadPorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegPesoAlto"/>
+        <Class IRI="#CapSegPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegPesoBajo"/>
+        <Class IRI="#CapSegPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegPesoMedio"/>
+        <Class IRI="#CapSegPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegPromedioVehículosPorParte"/>
+        <Class IRI="#CapSegContenido"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegPromedioVehículosTotal"/>
+        <Class IRI="#CapSegContenido"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelAlta"/>
+        <Class IRI="#CapSegVelocidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelBaja"/>
+        <Class IRI="#CapSegVelocidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelEstacionamiento"/>
+        <Class IRI="#CapSegVelocidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelMedia"/>
+        <Class IRI="#CapSegVelocidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelMuyAlta"/>
+        <Class IRI="#CapSegVelocidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelMuyBaja"/>
+        <Class IRI="#CapSegVelocidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelPeatonal"/>
+        <Class IRI="#CapSegVelocidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CapSegVelocidad"/>
+        <Class IRI="#CapacidadPorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntAbierto"/>
+        <Class IRI="#EdoEntApertura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntApertura"/>
+        <Class IRI="#EstadoEntidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntCerrado"/>
+        <Class IRI="#EdoEntApertura"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntEnFunciones"/>
+        <Class IRI="#EdoEntFuncionalidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntFuncionalidad"/>
+        <Class IRI="#EstadoEntidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntNoAutorizado"/>
+        <Class IRI="#EdoEntFuncionalidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntNoOperante"/>
+        <Class IRI="#EdoEntOperación"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntOperación"/>
+        <Class IRI="#EstadoEntidad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdoEntOperante"/>
+        <Class IRI="#EdoEntOperación"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstActivo"/>
+        <Class IRI="#ElemConstructivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstBarrera"/>
+        <Class IRI="#ElemConstActivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstBloque"/>
+        <Class IRI="#ElemConstPasivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstCrucero"/>
+        <Class IRI="#ElemConstPasivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstOneWay"/>
+        <Class IRI="#ElemConstActivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstPasivo"/>
+        <Class IRI="#ElemConstructivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstPilonesAutomáticos"/>
+        <Class IRI="#ElemConstActivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstPluma"/>
+        <Class IRI="#ElemConstActivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstPuenteLevadizo"/>
+        <Class IRI="#ElemConstActivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstSegmento"/>
+        <Class IRI="#ElemConstPasivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemConstSemáforo"/>
+        <Class IRI="#ElemConstActivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabAguasNegras"/>
+        <Class IRI="#ElemHabLíquido"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabAire"/>
+        <Class IRI="#ElemHabGas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabAutobús"/>
+        <Class IRI="#ElemHabCamión"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabAutobúsArticulado"/>
+        <Class IRI="#ElemHabAutobús"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabAutobúsDosPisos"/>
+        <Class IRI="#ElemHabAutobús"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabAutocar"/>
+        <Class IRI="#ElemHabAutobús"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabBicicleta"/>
+        <Class IRI="#ElemHabVehículo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamCargaArtDosRemolques"/>
+        <Class IRI="#ElemHabCamCargaArticulado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamCargaArtTren"/>
+        <Class IRI="#ElemHabCamCargaArticulado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamCargaArtUnRemolque"/>
+        <Class IRI="#ElemHabCamCargaArticulado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamCargaArticulado"/>
+        <Class IRI="#ElemHabCamiónCarga"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamCargaRígido"/>
+        <Class IRI="#ElemHabCamiónCarga"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamioneta"/>
+        <Class IRI="#ElemHabUtilitario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamión"/>
+        <Class IRI="#ElemHabVehículo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCamiónCarga"/>
+        <Class IRI="#ElemHabCamión"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCiclomotor"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCoche"/>
+        <Class IRI="#ElemHabVehículo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+        <Class IRI="#ElemHabCoche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCocheSegA"/>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCocheSegB"/>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCocheSegC"/>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCocheSegD"/>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCocheSegE"/>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCocheSegF"/>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabCocheTaxi"/>
+        <Class IRI="#ElemHabCoche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabConPatines"/>
+        <Class IRI="#ElemHabNoPedestre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabEnSillaRuedas"/>
+        <Class IRI="#ElemHabNoPedestre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabFerrobús"/>
+        <Class IRI="#ElemHabTrenUrbano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabFunicular"/>
+        <Class IRI="#ElemHabTrenUrbano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabFurgoneta"/>
+        <Class IRI="#ElemHabUtilitario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabFurgónDeCarga"/>
+        <Class IRI="#ElemHabUtilitario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabGas"/>
+        <Class IRI="#ElemHabOtro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabGasContaminante"/>
+        <Class IRI="#ElemHabGas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabLigero"/>
+        <Class IRI="#ElemHabTrenUrbano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabLluvia"/>
+        <Class IRI="#ElemHabLíquido"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabLíquido"/>
+        <Class IRI="#ElemHabOtro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMetro"/>
+        <Class IRI="#ElemHabTrenUrbano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMicroCoche"/>
+        <Class IRI="#ElemHabCoche"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMidibús"/>
+        <Class IRI="#ElemHabAutobús"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMinibús"/>
+        <Class IRI="#ElemHabAutobús"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMonorriel"/>
+        <Class IRI="#ElemHabTrenUrbano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMotoCamino"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMotoCarga"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMotoCompetencia"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMotoMedia"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMotoTaxi"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMotocicleta"/>
+        <Class IRI="#ElemHabVehículo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabMotorizado"/>
+        <Class IRI="#ElemHabPatín"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabNoMotorizado"/>
+        <Class IRI="#ElemHabPatín"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabNoPedestre"/>
+        <Class IRI="#ElemHabPeatón"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabOtro"/>
+        <Class IRI="#ElemHabitante"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabOtrosDerrames"/>
+        <Class IRI="#ElemHabLíquido"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabPatín"/>
+        <Class IRI="#ElemHabNoPedestre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabPeatón"/>
+        <Class IRI="#ElemHabitante"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabPedestre"/>
+        <Class IRI="#ElemHabPeatón"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabScooter"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabSubutilitario"/>
+        <Class IRI="#ElemHabUtilitario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabTaxiUtilitario"/>
+        <Class IRI="#ElemHabUtilitario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabTodoterreno"/>
+        <Class IRI="#ElemHabUtilitario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabTranvía"/>
+        <Class IRI="#ElemHabTrenUrbano"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabTrenUrbano"/>
+        <Class IRI="#ElemHabVehículo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabTrolebús"/>
+        <Class IRI="#ElemHabAutobús"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabUtilitario"/>
+        <Class IRI="#ElemHabVehículo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemHabVehículo"/>
+        <Class IRI="#ElemHabitante"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueCamellón"/>
+        <Class IRI="#ElemPasivoBloqueGlorieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueCondominio"/>
+        <Class IRI="#ElemConstBloque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueCoto"/>
+        <Class IRI="#ElemConstBloque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueCuchilla"/>
+        <Class IRI="#ElemPasivoBloqueGlorieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueGlorieta"/>
+        <Class IRI="#ElemConstBloque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueManzana"/>
+        <Class IRI="#ElemConstBloque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueMódulo"/>
+        <Class IRI="#ElemConstBloque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloquePlaza"/>
+        <Class IRI="#ElemConstBloque"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoBloqueRotonda"/>
+        <Class IRI="#ElemPasivoBloqueGlorieta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoAndador"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoAutopista"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoAvenida"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoCalle"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoCambioVía"/>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoCiclovía"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoEntradaVía"/>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoPuente"/>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoSalidaVía"/>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoSendero"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElemPasivoSegmentoTunel"/>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogSegCarrilesPorSentido"/>
+        <Class IRI="#LógicaSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogSegSentidoPorCarril"/>
+        <Class IRI="#LógicaSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegE"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegN"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegNE"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegNO"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegO"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegS"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegSE"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientSegSO"/>
+        <Class IRI="#OrientaciónSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SentSegDoble"/>
+        <Class IRI="#SentidoSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SentSegMixto"/>
+        <Class IRI="#SentidoSegmento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SentSegSencillo"/>
+        <Class IRI="#SentidoSegmento"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AmpSegCinco"/>
+        <Class IRI="#AmpSegCuatro"/>
+        <Class IRI="#AmpSegDos"/>
+        <Class IRI="#AmpSegOcho"/>
+        <Class IRI="#AmpSegSeis"/>
+        <Class IRI="#AmpSegSiete"/>
+        <Class IRI="#AmpSegTres"/>
+        <Class IRI="#AmpSegUno"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CapSegPesoAlto"/>
+        <Class IRI="#CapSegPesoBajo"/>
+        <Class IRI="#CapSegPesoMedio"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CapSegPromedioVehículosPorParte"/>
+        <Class IRI="#CapSegPromedioVehículosTotal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CapSegVelAlta"/>
+        <Class IRI="#CapSegVelBaja"/>
+        <Class IRI="#CapSegVelEstacionamiento"/>
+        <Class IRI="#CapSegVelMedia"/>
+        <Class IRI="#CapSegVelMuyAlta"/>
+        <Class IRI="#CapSegVelMuyBaja"/>
+        <Class IRI="#CapSegVelPeatonal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EdoEntAbierto"/>
+        <Class IRI="#EdoEntCerrado"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EdoEntApertura"/>
+        <Class IRI="#EdoEntFuncionalidad"/>
+        <Class IRI="#EdoEntOperación"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EdoEntNoOperante"/>
+        <Class IRI="#EdoEntOperante"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemConstActivo"/>
+        <Class IRI="#ElemConstPasivo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemConstBarrera"/>
+        <Class IRI="#ElemConstOneWay"/>
+        <Class IRI="#ElemConstPilonesAutomáticos"/>
+        <Class IRI="#ElemConstPluma"/>
+        <Class IRI="#ElemConstPuenteLevadizo"/>
+        <Class IRI="#ElemConstSemáforo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemConstBloque"/>
+        <Class IRI="#ElemConstCrucero"/>
+        <Class IRI="#ElemConstSegmento"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabAguasNegras"/>
+        <Class IRI="#ElemHabLluvia"/>
+        <Class IRI="#ElemHabOtrosDerrames"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabAire"/>
+        <Class IRI="#ElemHabGasContaminante"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabAutobús"/>
+        <Class IRI="#ElemHabCamiónCarga"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabAutobúsArticulado"/>
+        <Class IRI="#ElemHabAutobúsDosPisos"/>
+        <Class IRI="#ElemHabAutocar"/>
+        <Class IRI="#ElemHabMidibús"/>
+        <Class IRI="#ElemHabMinibús"/>
+        <Class IRI="#ElemHabTrolebús"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabBicicleta"/>
+        <Class IRI="#ElemHabCamión"/>
+        <Class IRI="#ElemHabCoche"/>
+        <Class IRI="#ElemHabMotocicleta"/>
+        <Class IRI="#ElemHabTrenUrbano"/>
+        <Class IRI="#ElemHabUtilitario"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabCamCargaArtDosRemolques"/>
+        <Class IRI="#ElemHabCamCargaArtTren"/>
+        <Class IRI="#ElemHabCamCargaArtUnRemolque"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabCamCargaArticulado"/>
+        <Class IRI="#ElemHabCamCargaRígido"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabCamioneta"/>
+        <Class IRI="#ElemHabFurgoneta"/>
+        <Class IRI="#ElemHabFurgónDeCarga"/>
+        <Class IRI="#ElemHabSubutilitario"/>
+        <Class IRI="#ElemHabTaxiUtilitario"/>
+        <Class IRI="#ElemHabTodoterreno"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabCiclomotor"/>
+        <Class IRI="#ElemHabMotoCamino"/>
+        <Class IRI="#ElemHabMotoCarga"/>
+        <Class IRI="#ElemHabMotoCompetencia"/>
+        <Class IRI="#ElemHabMotoMedia"/>
+        <Class IRI="#ElemHabMotoTaxi"/>
+        <Class IRI="#ElemHabScooter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabCochePorSegmento"/>
+        <Class IRI="#ElemHabCocheTaxi"/>
+        <Class IRI="#ElemHabMicroCoche"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabCocheSegA"/>
+        <Class IRI="#ElemHabCocheSegB"/>
+        <Class IRI="#ElemHabCocheSegC"/>
+        <Class IRI="#ElemHabCocheSegD"/>
+        <Class IRI="#ElemHabCocheSegE"/>
+        <Class IRI="#ElemHabCocheSegF"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabConPatines"/>
+        <Class IRI="#ElemHabEnSillaRuedas"/>
+        <Class IRI="#ElemHabPatín"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabFerrobús"/>
+        <Class IRI="#ElemHabFunicular"/>
+        <Class IRI="#ElemHabLigero"/>
+        <Class IRI="#ElemHabMetro"/>
+        <Class IRI="#ElemHabMonorriel"/>
+        <Class IRI="#ElemHabTranvía"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabGas"/>
+        <Class IRI="#ElemHabLíquido"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabMotorizado"/>
+        <Class IRI="#ElemHabNoMotorizado"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabNoPedestre"/>
+        <Class IRI="#ElemHabPedestre"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemHabOtro"/>
+        <Class IRI="#ElemHabPeatón"/>
+        <Class IRI="#ElemHabVehículo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemPasivoBloqueCamellón"/>
+        <Class IRI="#ElemPasivoBloqueCuchilla"/>
+        <Class IRI="#ElemPasivoBloqueRotonda"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemPasivoBloqueCondominio"/>
+        <Class IRI="#ElemPasivoBloqueCoto"/>
+        <Class IRI="#ElemPasivoBloqueGlorieta"/>
+        <Class IRI="#ElemPasivoBloqueManzana"/>
+        <Class IRI="#ElemPasivoBloqueMódulo"/>
+        <Class IRI="#ElemPasivoBloquePlaza"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemPasivoSegmentoAndador"/>
+        <Class IRI="#ElemPasivoSegmentoAutopista"/>
+        <Class IRI="#ElemPasivoSegmentoAvenida"/>
+        <Class IRI="#ElemPasivoSegmentoCalle"/>
+        <Class IRI="#ElemPasivoSegmentoCiclovía"/>
+        <Class IRI="#ElemPasivoSegmentoPaso"/>
+        <Class IRI="#ElemPasivoSegmentoSendero"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElemPasivoSegmentoCambioVía"/>
+        <Class IRI="#ElemPasivoSegmentoEntradaVía"/>
+        <Class IRI="#ElemPasivoSegmentoPuente"/>
+        <Class IRI="#ElemPasivoSegmentoSalidaVía"/>
+        <Class IRI="#ElemPasivoSegmentoTunel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LogSegCarrilesPorSentido"/>
+        <Class IRI="#LogSegSentidoPorCarril"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OrientSegE"/>
+        <Class IRI="#OrientSegN"/>
+        <Class IRI="#OrientSegNE"/>
+        <Class IRI="#OrientSegNO"/>
+        <Class IRI="#OrientSegO"/>
+        <Class IRI="#OrientSegS"/>
+        <Class IRI="#OrientSegSE"/>
+        <Class IRI="#OrientSegSO"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SentSegDoble"/>
+        <Class IRI="#SentSegMixto"/>
+        <Class IRI="#SentSegSencillo"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#esOperante"/>
+        <ObjectProperty IRI="#estaFuncionando"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estáAbierto"/>
+        <ObjectProperty IRI="#estaFuncionando"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneLogPorCarril"/>
+        <ObjectProperty IRI="#tieneLógicaOperación"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tieneLogPorSentido"/>
+        <ObjectProperty IRI="#tieneLógicaOperación"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#entraDesde"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#entraDesde"/>
+            <Class IRI="#ElemConstSegmento"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaFuncionando"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#esOperante"/>
+            <Class IRI="#EdoEntOperación"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaFuncionando"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#estáAbierto"/>
+            <Class IRI="#EdoEntApertura"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estáConectadoA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#entraDesde"/>
+            <Class IRI="#ElemConstCrucero"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#puedeContener"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#puedeContener"/>
+            <Class IRI="#CapacidadPorSegmento"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#saleHacia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#saleHacia"/>
+            <Class IRI="#ElemConstSegmento"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneAmplitud"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#tieneAmplitud"/>
+            <Class IRI="#AmplitudSegmento"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneLogPorCarril"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#tieneLogPorCarril"/>
+            <Class IRI="#LogSegSentidoPorCarril"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneLogPorSentido"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#tieneLogPorSentido"/>
+            <Class IRI="#LogSegCarrilesPorSentido"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneOrientación"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#tieneOrientación"/>
+            <Class IRI="#OrientaciónSegmento"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneSentido"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#tieneSentido"/>
+            <Class IRI="#SentidoSegmento"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
